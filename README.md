@@ -1,5 +1,11 @@
 # TechForStartup---Day-2-Workshop-1 (Client Server System Design)
 
+# Codes
+Coding Question : [Click Here](https://codesandbox.io/s/tech-workshop-question-client-server-system-design-s1ui3?file=/src/index.js)
+Full Working Code : [Click Here](https://codesandbox.io/s/tech-workshop-client-server-system-design-ohf50?file=/src/index.js)
+
+**DO NOT** edit the codes on these link. If you want to have a copy of the code to work on, please fork it. Please try to attempt the coding question before looking at the full working code.
+
 # Scenario
 iCUBE would like to create a website to allow participants to register for Tech For Startups. To keep track of the name of participants who sign up, we will be using a server. For simplicity in our workshop, we will only keep track of the name of last participant who sign up. When a user signs up, the server should update its variable **name** with the name used to sign up. To ensure the website still keeps track of the name in another page, iCUBE creates another page. When the user clicks **Next Page** and goes to another page, the website can still retrieve the name from server.
 
@@ -11,3 +17,5 @@ The back end server script is `index.js`. The front end website scripts are `mai
 3. In `next_page.html`, write the **XMLHTTPRequest** to request **name** from `main_page.html`. Use the endpoint "/name" to submit a query. Refer to `main_page.html` on how to write **XMLHTTPRequest**. You should also replace the text *Anonymous* with the name that you requested.
 4. In `index.js`, implement the GET query for the endpoint "/name" and send the variable **name** back to front end.
 5. Check whether the code is working. At `main_page.html`, register a participants. Click **Next Page** and you should see **Well Done Anonymous** is replaced with **Well Done {name}**.
+
+# TechForStartup---Day-2-Workshop-2 (Model View Controller)

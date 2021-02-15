@@ -37,7 +37,7 @@ iCUBE would like to create an internal app for both Marketing and Event teams. T
 # Tasks
 We will be using a simple **Model View Controller** system design for this app. We have created `model.js`, `view.js` and `controller.js` for each class. The system designs that iCUBE would like to build is as follows:
 
-1. Model and View will be connecting with the Controller, but Model and View do not connect with each other.
+1. Model and View will be connecting with the Controller, but Model and View do not connect with each other. This is already written in `init.`
 2. Whenever submit button is clicked, the function `submitEvent` in View will be called. View should get the input of name and status ("will" or "might"), sends them to Controller (by calling `updateParticipantsList` in Controller) and inform it to update participant list.
 3. When the Controller is notified, it sends the name to the Model (by calling `addMarketing` or `addEvent` in Model depending on the status) and inform it to update its lists.
 4. When the Model is notified, it will update **marketing_list** (list of names who will or might attend) and **event_list** (list of names who will attend) depends on the functions invoked.

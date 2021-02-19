@@ -19,6 +19,11 @@ The back end server script is `index.js`. The front end website scripts are `mai
 4. In `index.js`, implement the GET query for the endpoint "/name" and send the variable **name** back to front end.
 5. Check whether the code is working. At `main_page.html`, register a participants. Click **Next Page** and you should see **Well Done Anonymous** is replaced with **Well Done {name}**.
 
+# Additional Reading Materials
+1. You can see more detailed tutorials about using **XMLHTTPRequest** [here](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest).
+2. You can see more detailed tutorials about using **Express.js** [here](https://expressjs.com/en/5x/api.html).
+3. Wondering how to use Node.js for your server? Click [here](https://codeburst.io/the-only-nodejs-introduction-youll-ever-need-d969a47ef219)
+
 # TechForStartup---Day-2-Workshop-2 (Model View Controller)
 
 # Codes
@@ -44,3 +49,7 @@ We will be using a simple **Model View Controller** system design for this app. 
 5. The Model will send the latest **marketing_list** and **event_list** to Controller (by calling `updateDisplayList` in Controller) and inform it to update the lists to display.
 6. When the Controller is notified, it converts both lists to strings, sends them to View (by calling `changeDisplay` in View) and inform it to update the lists to display.
 7. When the View is notified, it updates the display with new list.
+
+# Additional Reading Materials
+1. This code uses tight coupling to integrate between Model, View and Controller. However, most systems design prefers loose coupling. Find out more the difference between both [here](https://nordicapis.com/the-difference-between-tight-coupling-and-loose-coupling/).
+2. Read [here](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) to know more about Model-View-Controller (MVC) design pattern.
